@@ -1,0 +1,102 @@
+/* style.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: scroll;
+    overflow: hidden;
+}
+
+#vi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+main {
+    position: relative;
+    z-index: 1; 
+    text-align: center;
+    color: white; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin-top: 0;
+}
+
+.game {
+    /* display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px; */
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+}
+
+.box {
+    width: 18vmin;
+    height: 18vmin;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background for visibility */
+    border: none;
+    font-size: 24px;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 1rem  rgba(0, 0, 0, 0.2);
+    font-size: 8vmin;
+    color: #7694eb;
+    transition: background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: rgba(255, 255, 255, 1); /* Change background color on hover */
+}
+
+h1{
+    margin: 32px;
+    color: white;
+}
+
+#reset-btn{
+    margin: 4px;
+    padding: 8px;
+    font-size: 1.25rem;
+    border: none;
+    background: white;
+    border-radius: 0.8rem;
+}
+
+#new-btn{
+    margin: 4px;
+    padding: 8px;
+    font-size: 1.25rem;
+    border: none;
+    background: white;
+    border-radius: 0.8rem;
+}
+
+#msg{
+    margin: 30px;
+    font-size: 6vmin;
+}
+
+.hide{
+    display: none;
+}
+
+
+
+
